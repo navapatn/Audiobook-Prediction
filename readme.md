@@ -24,7 +24,7 @@ Starting from raw data, there are many NA/errors and categorical variables that 
 **1.3 Save the data in a tensor friendly format**
 
 
-## 2. Descriptive Analysis
+## 2. Create the machine learning algorithm
 
 After the data is cleaned, I performed a descriptive analysis to see if our data is normally distributed and would be a good set to be used to train regression model
 
