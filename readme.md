@@ -8,9 +8,6 @@ The data was gathered from an audiobooks app representing 2.5 years worth of eng
 
 This data provide information about customers purchase history i.e. book length, review scores, minute listened, last visited date, price, etc.
 
-We want to perform a supervised learning 
-
-Here is the link to the excel file: https://drive.google.com/drive/folders/1yn0MCEoyZHdS9diTtCAyqYwqQlf4Zwqo
 
 ## 1. Data Preprocessing
 
