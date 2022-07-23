@@ -21,23 +21,26 @@ Starting from raw data, there are many NA/errors and categorical variables that 
 
 **1.2 Divide the dataset into training, validation, and test set**
 
-**1.3 Save the data in a tensor friendly format**
+**1.3 Save the data in a tensor friendly format (.npz)**
 
 
 ## 2. Create the machine learning algorithm
 
-After the data is cleaned, I performed a descriptive analysis to see if our data is normally distributed and would be a good set to be used to train regression model
+I would like to test the result fast in the first run, so using Neural Network with 2 hidden layers, and each layer contain 50 hidden nodes will provide a solid idea of how the result is going to be.
 
 
-We can see that based on Skewness, Mean, Standard deviation, we need to remove some outliers from price and area.
+---include model code here---
+
+The model was overfitting as the training loss is always going down, but validation loss fluctuates up and down in each epoch.
+
+To fix the problem, adding an early stopping mechanism (callbacks) will make the model stops trainning before it becomes overfitting
+
+by setting patient = 2, the algorithm stops at 19th epoch with 90% accuracy.
 
 
-Then I ran another descriptive analysis to see the result after removing outliers.
 
 
-## 3. Building Linear Regression Model
 
-**3.1 Split training set and test set (80/20)**
+## 3. Test the model
 
-**3.2 to see the result please check at:**
 
